@@ -5,6 +5,7 @@ const endpoint = 'https://api.github.com/users/andrewfschorr/events';
 
 function getRecentGitCommits(cb) {
     fetch(endpoint).then(resp => resp.json()).then((data) => {
+        console.log(data);
         const pushEvents = data.filter((evt) => {
             return evt.type === 'PushEvent';
         });
