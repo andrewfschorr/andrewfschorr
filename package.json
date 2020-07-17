@@ -16,7 +16,7 @@
     "deploy": "yarn run build && git push grid master"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "moment": "^2.20.1"
   },
   "devDependencies": {
